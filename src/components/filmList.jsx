@@ -17,7 +17,7 @@ class FilmList extends Component {
                 <div className="row">
                     {this.props.films.map((film, index) => {
                         return (
-                            <div key={index} className="col-12">
+                            <div key={index} className="col-lg-6">
                                 <Film title={film.title} description={film.description} />
                             </div>
                         );

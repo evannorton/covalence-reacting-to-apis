@@ -17,7 +17,7 @@ class PersonList extends Component {
                 <div className="row">
                     {this.props.people.map((person, index) => {
                         return (
-                            <div key={index} className="col-12">
+                            <div key={index} className="col-lg-4">
                                 <Person name={person.name} age={person.age} gender={person.gender} url={person.url} />
                             </div>
                         );

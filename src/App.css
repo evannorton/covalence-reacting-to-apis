@@ -6,8 +6,22 @@ body {
     background-image: url("http://supernovathemes.com/wp-content/themes/supernovathemes/images/bg/b19.png");
 }
 
+a {
+    color: black;
+}
+
+a:hover {
+    color: black;
+    font-weight: bold;
+}
+
 button {
     height: 4em;
+}
+
+.film-card {
+    height: 25em;
+    margin-bottom: 1em;
 }
 
 .person-text {

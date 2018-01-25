@@ -23,16 +23,16 @@ class Header extends Component {
         return (
             <div id="header" className="container-fluid">
                 <div className="row">
-                    <div className="col-4">
+                    <div className="col-lg-4">
                         <img src={logo} alt="Logo"/>
                     </div>
-                    <div className="col-4 d-flex align-items-end">
+                    <div className="col-lg-4 d-flex align-items-end">
                         <button type="button"
                         className="btn btn-outline-dark btn-lg btn-block"
                         onClick={() => this.handleFilmsClick()}
                         >Load Films</button>
                     </div>
-                    <div className="col-4 d-flex align-items-end">
+                    <div className="col-lg-4 d-flex align-items-end">
                         <button type="button"
                         className="btn btn-outline-dark btn-lg btn-block"
                         onClick={() => this.handlePeopleClick()}
