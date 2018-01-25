@@ -3,10 +3,15 @@ body {
     margin-bottom: 2em;
     margin-left: 15%;
     margin-right: 15%;
+    background-image: url("http://supernovathemes.com/wp-content/themes/supernovathemes/images/bg/b19.png");
 }
 
 button {
     height: 4em;
+}
+
+.person-text {
+    line-height: .5
 }
 
 #header {

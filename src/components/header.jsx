@@ -11,22 +11,32 @@ class Header extends Component {
         }
     }
 
-    handleClick() {
-        this.props.onClick(this.state.isClicked);
+    handleFilmsClick() {
+        this.props.onFilmsClick(this.state.isFilmsClicked);
+    }
+
+    handlePeopleClick() {
+        this.props.onPeopleClick(this.state.isPeopleClicked);
     }
 
     render() {
         return (
             <div id="header" className="container-fluid">
                 <div className="row">
-                    <div className="col-6">
+                    <div className="col-4">
                         <img src={logo} alt="Logo"/>
                     </div>
-                    <div className="col-6 d-flex align-items-end">
+                    <div className="col-4 d-flex align-items-end">
                         <button type="button"
-                        className="btn btn-primary btn-lg btn-block"
-                        onClick={() => this.handleClick()}
+                        className="btn btn-outline-dark btn-lg btn-block"
+                        onClick={() => this.handleFilmsClick()}
                         >Load Films</button>
+                    </div>
+                    <div className="col-4 d-flex align-items-end">
+                        <button type="button"
+                        className="btn btn-outline-dark btn-lg btn-block"
+                        onClick={() => this.handlePeopleClick()}
+                        >Load People</button>
                     </div>
                 </div>
             </div>

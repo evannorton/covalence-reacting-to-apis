@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Film from "./film";
+import Person from "./person";
 
-class FilmList extends Component {
+class PersonList extends Component {
 
     constructor(props) {
         super(props);
@@ -15,10 +15,10 @@ class FilmList extends Component {
         return (
             <div className="container-fluid justify-content-center">
                 <div className="row">
-                    {this.props.films.map((film, index) => {
+                    {this.props.people.map((person, index) => {
                         return (
                             <div key={index} className="col-12">
-                                <Film title={film.title} description={film.description} />
+                                <Person name={person.name} age={person.age} gender={person.gender} url={person.url} />
                             </div>
                         );
                     })}
@@ -29,4 +29,4 @@ class FilmList extends Component {
 
 }
 
-export default FilmList;
+export default PersonList;
