@@ -39,35 +39,24 @@ class App extends Component {
         this.setState({ peopleClicked: true, filmsClicked: false })
     }
 
-    render() {
+    renderList() {
         if (this.state.filmsClicked) {
-            return (
-                <React.Fragment>
-                    <Header
-                    onFilmsClick={(filmsClicked) => this.handleFilmsClick(filmsClicked)}
-                    onPeopleClick={(peopleClicked) => this.handlePeopleClick(peopleClicked)}
-                    />
-                    <FilmList films={this.state.films} />
-                </React.Fragment>
-            );
+            return <FilmList films={this.state.films} />;
         } else if (this.state.peopleClicked) {
-            return(
-                <React.Fragment>
-                    <Header
-                    onFilmsClick={(filmsClicked) => this.handleFilmsClick(filmsClicked)}
-                    onPeopleClick={(peopleClicked) => this.handlePeopleClick(peopleClicked)}
-                    />
-                    <PersonList people={this.state.people} />
-                </React.Fragment>
-            );
-        } else {
-            return (
+            return <PersonList people={this.state.people} />;
+        }
+    }
+
+    render() {
+        return (
+            <React.Fragment>
                 <Header
                 onFilmsClick={(filmsClicked) => this.handleFilmsClick(filmsClicked)}
                 onPeopleClick={(peopleClicked) => this.handlePeopleClick(peopleClicked)}
                 />
-            );
-        }
+                {this.renderList()}
+            </React.Fragment>
+        );
     }
 
 }
