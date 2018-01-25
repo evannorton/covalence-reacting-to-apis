@@ -8,6 +8,7 @@ body {
 
 a {
     color: black;
+    font-style: italic;
 }
 
 a:hover {
@@ -20,9 +21,16 @@ button {
     height: 4em;
 }
 
+.card {
+    margin-bottom: 1em;
+}
+
 .film-card {
     height: 25em;
-    margin-bottom: 1em;
+}
+
+.person-card {
+    height: 10em;
 }
 
 .person-text {

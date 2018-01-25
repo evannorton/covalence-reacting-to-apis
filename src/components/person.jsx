@@ -13,7 +13,7 @@ class Person extends Component {
     render() {
         return (
             <div className="card">
-                <div className="card-body">
+                <div className="card-body person-card">
                     <h5 className="card-title">{this.props.name}</h5>
                     <p className="card-text person-text">Age: {this.props.age}</p>
                     <p className="card-text person-text">Gender: {this.props.gender}</p>
