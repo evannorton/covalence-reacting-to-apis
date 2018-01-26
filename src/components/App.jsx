@@ -25,7 +25,7 @@ class App extends Component {
             .then(films => {
                 this.setState({ films });
             }
-        );
+            );
         this.setState({ filmsClicked: true, peopleClicked: false })
     }
 
@@ -35,7 +35,7 @@ class App extends Component {
             .then(people => {
                 this.setState({ people });
             }
-        );
+            );
         this.setState({ peopleClicked: true, filmsClicked: false })
     }
 
@@ -51,8 +51,8 @@ class App extends Component {
         return (
             <React.Fragment>
                 <Header
-                onFilmsClick={(filmsClicked) => this.handleFilmsClick(filmsClicked)}
-                onPeopleClick={(peopleClicked) => this.handlePeopleClick(peopleClicked)}
+                    onFilmsClick={(filmsClicked) => this.handleFilmsClick(filmsClicked)}
+                    onPeopleClick={(peopleClicked) => this.handlePeopleClick(peopleClicked)}
                 />
                 {this.renderList()}
             </React.Fragment>
