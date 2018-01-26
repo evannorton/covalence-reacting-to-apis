@@ -6,17 +6,12 @@ body {
     background-image: url("http://supernovathemes.com/wp-content/themes/supernovathemes/images/bg/b19.png");
 }
 
-a {
-    color: black;
-    font-style: italic;
-}
-
-a:hover {
-    color: black;
-    font-weight: bold;
-}
-
 button {
+    margin-top: 1em;
+    height: 4em;
+}
+
+a {
     margin-top: 1em;
     height: 4em;
 }
