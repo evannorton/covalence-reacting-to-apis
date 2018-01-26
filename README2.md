@@ -22,7 +22,7 @@ package.json
 README.md
 ```
 
-Before starting the following tasks, make sure that the Chrome Developer Tools are open in your "localhost:3000" tab, and that you also have the React Developer Tools installed. You should be checking these as much as possible to not only troubleshoot these tasks, but to confirm your understanding of what you are doing. 
+Before starting the following tasks, make sure that the Chrome Developer Tools are open in your "localhost:3000" tab, and that you also have the React Developer Tools installed. You should be checking these as much as possible to not only troubleshoot these tasks, but to confirm your understanding of what you are doing.
 
 **In this lab, it is also helpful to check your 'Network' tab in the Chrome Developer Tools when you are making HTTP Requests (or expecting HTTP Responses).**
 
@@ -31,11 +31,11 @@ Before starting the following tasks, make sure that the Chrome Developer Tools a
 ## Objectives
 **DESIGN CONSTRAINT:** You may only render one component in `index.js`.
 
-This lab builds upon the skills you learned in `reacting-to-apis`, but it is not essential to fully complete `reacting-to-apis` before proceeding with this lab. 
+This lab builds upon the skills you learned in `reacting-to-apis`, but it is not essential to fully complete `reacting-to-apis` before proceeding with this lab.
 
 In this lab assignment, your primary objective is to **create multiple routes in your application** based on the data you receive from a request to a third-party API. Only certain data will be loaded (and therefore rendered) based on the route you are navigating to in the application.
 
-The API we will be using is the [Studio Ghibli API](https://ghibliapi.herokuapp.com/). 
+The API we will be using is the [Studio Ghibli API](https://ghibliapi.herokuapp.com/).
 
 #### After each step, commit your changes in Git, and push them to a GitHub repository on your GitHub profile. If you need a refresher on creating repositories and pushing to GitHub, check out the "Getting Started at Covalence" course.
 
@@ -48,9 +48,9 @@ The API we will be using is the [Studio Ghibli API](https://ghibliapi.herokuapp.
 
 3. Once you have that route working, configure another one for `/films/:id`. With this route, you should be able to click on a Link for any film you have displayed on `/films` to navigate to that specific film's webpage where you will list out all of the information pertaining to _only_ that film.
 
-4. Now that you have `/film` and `/film/:id` working, repeat tasks 1 and 2 with another endpoint (like People) in the Studio Ghibli API. 
+4. Now that you have `/film` and `/film/:id` working, repeat tasks 1 and 2 with another endpoint (like People) in the Studio Ghibli API.
 
-At the end of these tasks, you should have at least FIVE pages in your application, and you should be able to navigate to them simply by clicking a link. 
+At the end of these tasks, you should have at least FIVE pages in your application, and you should be able to navigate to them simply by clicking a link.
 
 ----
 

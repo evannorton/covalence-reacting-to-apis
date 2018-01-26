@@ -19,7 +19,7 @@ class FilmList extends Component {
             .then(films => {
                 this.setState({ films });
             }
-        );
+            );
     }
 
     render() {

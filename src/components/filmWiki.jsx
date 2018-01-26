@@ -8,7 +8,7 @@ class FilmWiki extends Component {
         super(props);
 
         this.state = {
-            
+
         };
     }
 
@@ -18,7 +18,7 @@ class FilmWiki extends Component {
             .then(film => {
                 this.setState({ ...film });
             }
-        );
+            );
     }
 
     render() {
